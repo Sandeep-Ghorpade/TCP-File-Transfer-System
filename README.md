@@ -2,6 +2,9 @@
 
 This project implements a simple TCP-based file transfer system using C and Linux socket programming.
 
+## Environment
+Tested on Ubuntu 24.04 LTS using GCC and Linux POSIX socket APIs.
+
 ## Features
 - Client-server architecture
 - File transfer over TCP
