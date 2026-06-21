@@ -209,7 +209,7 @@ int main(int argc, char* argv[])
             iRet = read(ClientSocket, FileName, sizeof(FileName));
 
             printf("Requested File by client : %s\n",FileName);
-            FileName[strspn(FileName, "\r\n")] = '\0';
+            FileName[strcspn(FileName, "\r\n")] = '\0';
 
             SendFileToClient(ClientSocket,FileName); 
 
